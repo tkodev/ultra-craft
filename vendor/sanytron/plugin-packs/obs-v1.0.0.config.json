@@ -1,0 +1,140 @@
+{
+    "button": [
+        {
+            "id": "wJ2kE5nW4hM5gI7gX4hA3jD8pL6sA1vS",
+            "icon": "file://icon/bianhuan.png",
+            "type": "PC_CONTROL",
+            "name": "Reset Transform",
+            "spanSize": 2,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    21
+                ]
+            }
+        },
+        {
+            "id": "sY1jR1hL6hZ4wK6gW1qG8fV8bW9cZ2lM",
+            "icon": "file://icon/bianji.png",
+            "type": "PC_CONTROL",
+            "name": "Edit Transform",
+            "spanSize": 2,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    8
+                ]
+            }
+        },
+        {
+            "id": "pJ4dH9rW7jH2xX9cK3rN2yX2nJ6yT0mR",
+            "icon": "file://icon/lashendaopingmu.png",
+            "type": "PC_CONTROL",
+            "name": "Stretch to Screen",
+            "spanSize": 2,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+					22
+                ]
+            }
+        },
+        {
+            "id": "dP3nJ4yX3tP6sS1dI5fS8hW3zE9gY2eP",
+            "icon": "file://icon/zhongxindaopingmu.png",
+            "type": "PC_CONTROL",
+            "name": "Center to Screen",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    7
+                ]
+            }
+        },
+        {
+            "id": "dL2qP9jF8qZ0tP8bX7zB8gZ3rM1iR8yI",
+            "icon": "file://icon/shiyingpingmu.png",
+            "type": "PC_CONTROL",
+            "name": "Fit to Screen",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    9
+                ]
+            }
+        },
+        {
+            "id": "vW4aH5eX9kN3xZ3lO0gS3hG4mF5eY7kH",
+            "icon": "file://icon/yuanliebiaoshangyi.png",
+            "type": "PC_CONTROL",
+            "name": "Move Up",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    82
+                ]
+            }
+        },
+        {
+            "id": "qI2uJ5cK0oQ0yT4yU7hO4hQ6sW5lI3tW",
+            "icon": "file://icon/yuanliebiaoxiayi.png",
+            "type": "PC_CONTROL",
+            "name": "Move Down",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    81
+                ]
+            }
+        },
+        {
+            "id": "nZ4rZ1xY1eE0zW9yF9wP6mH5tC0cH5sQ",
+            "icon": "file://icon/chexiao.png",
+            "type": "PC_CONTROL",
+            "name": "Undo",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    29
+                ]
+            }
+        },
+        {
+            "id": "oU4oC8uH5hD7dI9bW1qI7gD3mG3pS4kK",
+            "icon": "https://sslcdn.lifex360.com/icon/2026/07/2wjkxbk2qkttiqxogzry.png",
+            "type": "PC_CONTROL",
+            "name": "Redo",
+            "spanSize": 1,
+            "param": {
+                "output": 5,
+                "keys": [
+                    224,
+                    28
+                ]
+            }
+        }
+       
+       
+    ],
+    "identifier": "yN3uV9aO0eO7gT5yX0bP9tQ1jR5pQ3iJ",
+    "name": "OBS Hotkey Plugin",
+    "icon": "https://sslcdn.lifex360.com/icon/2026/07/lwp7zd73kpmqdvkq2qpi.png",
+    "homepage": "",
+    "versionName": "v1.0.0",
+    "versionCode": 1,
+    "author": "Sanytron",
+    "description": "Global Hotkeys for OBS."
+}

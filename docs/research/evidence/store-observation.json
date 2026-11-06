@@ -1,0 +1,21 @@
+{
+  "observedOn": "2026-11-05",
+  "tool": "REA CLI 6.7.0 Frida attach; Qt and libssl metadata hooks",
+  "events": [
+    {
+      "kind": "request",
+      "method": "POST",
+      "note": "Full URL/body not recovered"
+    },
+    {
+      "kind": "url",
+      "url": "https://gatewayssl.dev.aiks360.com"
+    },
+    {
+      "kind": "http",
+      "method": "GET",
+      "url": "https://sslcdn.lifex360.com/plugin/2026/08/8mcrt364xc84gxwdqxmj.zip"
+    }
+  ],
+  "note": "Manually minimized summary of private runtime capture, not an original REA Evidence record. No request headers, bodies, or user device identity retained."
+}

@@ -1,0 +1,25 @@
+export const copy = {
+  pair: 'Pair CoreBAR', pairing: 'Confirm on CoreBAR within 10 seconds…', paired: 'Paired', pairFailed: 'Pairing failed. Confirm on CoreBAR within ten seconds, then retry.',
+  readCatalog: 'Read native library', catalogTitle: 'On-device widget library', catalogRoot: 'All categories', catalogFailed: 'Cannot read the paired device library.', catalogReading: 'Reading device library…',
+  corebar: 'CoreBAR', discover: 'Find CoreBAR', discovering: 'Finding CoreBAR…', deviceIdle: 'No device discovered', deviceUnpaired: 'Discovered · not paired', discoveryFailed: 'CoreBAR discovery failed. Check COREBAR_HOST and the local bridge.',
+  nativeProject: 'Native UltraWorkspace project', nativeNote: 'Edit a private copy of your exported .umpf. The original stays unchanged.', nativeExport: 'Export .umpf', nativeUnconfigured: 'Set NATIVE_PROJECT_FILE in .env to open an existing export.', nativeFailed: 'Cannot open the native project copy.', nativeNewProfile: 'New native profile', makeDefault: 'Set as default', defaultProfile: 'Default profile',
+  nativeWidgets: 'Native widgets', nativeWidgetName: 'Widget name',
+  title: 'Ultra Craft', tagline: 'Your workspace. Your tools.', profiles: 'Profiles', newProfile: 'New profile', duplicate: 'Duplicate', delete: 'Delete profile',
+  rename: 'Profile name', export: 'Export profile', import: 'Import profile', library: 'Widget library', add: 'Add to profile',
+  truenas: 'TrueNAS', beszel: 'Beszel', cpu: 'CPU', ram: 'RAM', temperature: 'Temperature', unavailable: 'Unavailable',
+  canvas: 'CoreBAR preview', canvasNote: '1424 × 280 · horizontal layout', empty: 'Add a widget to start building this profile.',
+  settings: 'Widget settings', label: 'Display name', source: 'Telemetry source', sensor: 'Temperature sensor', automatic: 'Connection default', selectSensor: 'Connection default',
+  remove: 'Remove widget', left: 'Move left', right: 'Move right', sources: 'Connections',
+  setup: 'Connect your servers below to see live readings.', manageConnections: 'Manage connections', serverAddress: 'Server address', serverName: 'Display name', apiKey: 'API key', savedCredential: 'Credential already saved; leave blank to keep it', saveConnection: 'Save connection', connectionSaved: 'Connection saved', connectionFailed: 'Could not connect. Check the address, credentials, and certificate trust.', email: 'Email', password: 'Password', signIn: 'Sign in to Beszel', signInNote: 'Your password is used once. Only the session token is saved locally.', selectSystem: 'Choose a system', loadSystems: 'Load systems', saveSystem: 'Use this system',
+
+  preview: 'Open widget view', deploy: 'Device deployment unavailable', deployNote: 'Pairing and native profile deployment are still being verified.',
+  saved: 'Saved in this browser', saveError: 'Browser storage is unavailable. Export your profile to keep changes.',
+  importError: 'This is not a valid Ultra Craft profile. Native .umpf import is not supported yet.',
+  deleteLast: 'Keep at least one profile.', profileDefault: 'Homelab', newName: 'New profile', copySuffix: ' copy',
+  noSelection: 'Select a widget in the preview to configure it.', skip: 'Skip to workspace',
+  loadError: 'Cannot reach the local bridge. Retrying…', restoreError: 'Saved profiles could not be read. Your saved data was left untouched.',
+  status: { live: 'Live', stale: 'Stale', waiting: 'Waiting for data', error: 'Connection error', unconfigured: 'Not configured' },
+  age: 'Last observation', noObservation: 'No observation yet', secondsAgo: 's ago', notSelected: 'No widget selected',
+  welcome: 'Build your workspace', subtitle: 'Keep your homelab in view.', standalone: 'Widget view', back: 'Back to workspace',
+};
+export const widgetTypes = ['truenas', 'beszel'];

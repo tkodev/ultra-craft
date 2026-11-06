@@ -1,0 +1,24 @@
+{
+  "tool": "ordinary Python DEX encoded_array parser; not REA Evidence",
+  "apkSha256": "3cc2325501b66fe6a7d653de23a1424dda3e6a5e91c005e3bea6a1d49c8c5f2e",
+  "constants": [
+    {
+      "member": "HTTP_PORT",
+      "value": 8970,
+      "dex": "classes3.dex",
+      "offset": "0x6eaeb6"
+    },
+    {
+      "member": "LAN_DISCOVERY_PORT",
+      "value": 5319,
+      "dex": "classes3.dex",
+      "offset": "0x6eaec2"
+    },
+    {
+      "member": "TCP_COMMUNICATION_PORT",
+      "value": 7438,
+      "dex": "classes3.dex",
+      "offset": "0x6eaedd"
+    }
+  ]
+}

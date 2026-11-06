@@ -1,0 +1,367 @@
+ WebSocket 
+ WebSocketClientHandshaker00.java
+ WebSocketClientHandshaker07.java
+ WebSocketClientHandshaker08.java
+ WebSocketClientHandshaker13.java
+ WebSocketHandshakeException.java
+ WebSocketServerHandshaker00.java
+ WebSocketServerHandshaker07.java
+ WebSocketServerHandshaker08.java
+ WebSocketServerHandshaker13.java
+!Lio/netty/handler/pcap/UDPPacket;
+"Decoding WebSocket Frame length={}
+"Decoding WebSocket Frame opCode={}
+"WebSocketClientProtocolConfig.java
+"WebSocketServerProtocolConfig.java
+#Lokhttp3/internal/ws/RealWebSocket;
+#WebSocketClientProtocolHandler.java
+#WebSocketServerProtocolHandler.java
+$WebSocketClientExtensionHandler.java
+$WebSocketServerExtensionHandler.java
+$not a WebSocket request: missing key
+%CorruptedWebSocketFrameException.java
+%Lokhttp3/internal/ws/WebSocketReader;
+%Lokhttp3/internal/ws/WebSocketWriter;
+%WebSocketClientHandshakerFactory.java
+%WebSocketExtensionFilterProvider.java
+%WebSocketServerHandshakerFactory.java
+&(Lokhttp3/internal/ws/RealWebSocket;)V
+&WebSocketClientCompressionHandler.java
+&WebSocketClientHandshakeException.java
+&WebSocketExtensions(perMessageDeflate=
+&WebSocketServerCompressionHandler.java
+&WebSocketServerHandshakeException.java
+'Lokhttp3/internal/ws/WebSocketProtocol;
+'Unable to decode DNS response: UDP [{}]
+'WebSocketClientExtensionHandshaker.java
+'WebSocketServerExtensionHandshaker.java
+'getMinWebSocketMessageToCompress$okhttp
+'sendUnsupportedWebSocketVersionResponse
+'setMinWebSocketMessageToCompress$okhttp
+()Lokhttp3/WebSocketListener;
+(Discarding Pcap Write for UDP Object: {}
+(Lokhttp3/internal/concurrent/TaskRunner;Lokhttp3/Request;Lokhttp3/WebSocketListener;Ljava/util/Random;JLokhttp3/internal/ws/WebSocketExtensions;J)V
+({} WebSocket version {} server handshake
+)Lokhttp3/internal/ws/RealWebSocket$Close;
+)Lokhttp3/internal/ws/WebSocketExtensions;
+)Lorg/apache/commons/net/ntp/NTPUDPClient;
++ 1 RealWebSocket.kt
++ 1 WebSocketProtocol.kt
++ 1 WebSocketReader.kt
++ 1 WebSocketWriter.kt
++ 2 RealWebSocket.kt
++Lokhttp3/internal/ws/RealWebSocket$Message;
++Lokhttp3/internal/ws/RealWebSocket$Streams;
++Lorg/apache/commons/net/echo/EchoUDPClient;
++Lorg/apache/commons/net/time/TimeUDPClient;
++invalid WebSocket Extension handshake for "
++okhttp3/internal/ws/RealWebSocket$connect$1
+,Encoding WebSocket Frame opCode={} length={}
+,WebSocketClientProtocolConfig {webSocketUri=
+,WebSocketClientProtocolHandshakeHandler.java
+,WebSocketServerProtocolHandshakeHandler.java
+-Lokhttp3/internal/ws/RealWebSocket$Companion;
+-Lokhttp3/internal/ws/RealWebSocket$connect$1;
+-WebSocketServerProtocolConfig {websocketPath=
+.Expected 'Sec-WebSocket-Accept' header value '
+.Lokhttp3/internal/ws/RealWebSocket$WriterTask;
+.WebSocketDecoderConfig [maxFramePayloadLength=
+/api/websocket
+0minWebSocketMessageToCompress must be positive: 
+1Lcom/ultrabar/hub/common/websocket/CoreWebSocket;
+1Lorg/apache/commons/net/chargen/CharGenUDPClient;
+1Lorg/apache/commons/net/daytime/DaytimeUDPClient;
+1Lorg/apache/commons/net/discard/DiscardUDPClient;
+2not a WebSocket handshake request: missing upgrade
+3Lcom/ultrabar/hub/common/websocket/CoreWebSocket$1;
+3Lokhttp3/internal/ws/WebSocketExtensions$Companion;
+3Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
+5Expected 'Upgrade' header value 'websocket' but was '
+6Lio/netty/handler/codec/http/websocketx/Utf8Validator;
+6Lio/netty/handler/codec/http/websocketx/WebSocketUtil;
+6Writing UDP Data of {} Bytes, Src Addr {}, Dst Addr {}
+6unexpected Sec-WebSocket-Extensions in response header
+7Lcom/ultrabar/hub/integration/ha/websocket/HaWebSocket;
+7Lio/netty/handler/codec/http/websocketx/WebSocketFrame;
+8Lio/netty/handler/codec/http/websocketx/WebSocketScheme;
+8Lio/netty/handler/codec/http/websocketx/WebSocketUtil$1;
+8Lio/netty/handler/codec/http/websocketx/WebSocketUtil$2;
+8Received a DNS response with an unknown ID: UDP [{}: {}]
+8Request header not permitted: 'Sec-WebSocket-Extensions'
+9Lcom/ultrabar/hub/integration/ha/websocket/HaWebSocket$1;
+9Lcom/ultrabar/hub/integration/ha/websocket/HaWebSocket$2;
+9Lio/netty/handler/codec/http/websocketx/WebSocketVersion;
+:[Lio/netty/handler/codec/http/websocketx/WebSocketVersion;
+;Lio/netty/handler/codec/http/websocketx/PingWebSocketFrame;
+;Lio/netty/handler/codec/http/websocketx/PongWebSocketFrame;
+;Lio/netty/handler/codec/http/websocketx/TextWebSocketFrame;
+;Lio/netty/handler/codec/http/websocketx/Utf8FrameValidator;
+;WebSocket close status code does NOT comply with RFC-6455: 
+;WebSocket version 08 server handshake key: {}, response: {}
+;WebSocket version 13 server handshake key: {}, response: {}
+;WebSocketClientHandshaker should have been non finished yet
+<Lio/netty/handler/codec/http/websocketx/CloseWebSocketFrame;
+<WebSocket version 07 server handshake key: {}, response: {}.
+=Lio/netty/handler/codec/http/websocketx/BinaryWebSocketFrame;
+=Lio/netty/handler/codec/http/websocketx/WebSocketCloseStatus;
+>Lio/netty/handler/codec/http/websocketx/WebSocketChunkedInput;
+>Lio/netty/handler/codec/http/websocketx/WebSocketFrameDecoder;
+>Lio/netty/handler/codec/http/websocketx/WebSocketFrameEncoder;
+?Lio/netty/handler/codec/http/websocketx/WebSocketDecoderConfig;
+@Lio/netty/handler/codec/http/websocketx/WebSocket00FrameDecoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket00FrameEncoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket07FrameDecoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket07FrameEncoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket08FrameDecoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket08FrameEncoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket13FrameDecoder;
+@Lio/netty/handler/codec/http/websocketx/WebSocket13FrameEncoder;
+@okhttp3/internal/connection/RealConnection$newWebSocketStreams$1
+ALio/netty/handler/codec/http/websocketx/WebSocketDecoderConfig$1;
+ALio/netty/handler/codec/http/websocketx/WebSocketFrameAggregator;
+ALio/netty/handler/codec/http/websocketx/WebSocketProtocolHandler;
+BLio/netty/handler/codec/http/websocketx/WebSocket08FrameDecoder$1;
+BLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker;
+BLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker;
+BLokhttp3/internal/connection/RealConnection$newWebSocketStreams$1;
+BinaryWebSocketFrame.java
+CLio/netty/handler/codec/http/websocketx/ContinuationWebSocketFrame;
+CLio/netty/handler/codec/http/websocketx/WebSocketProtocolHandler$1;
+CLio/netty/handler/codec/http/websocketx/WebSocketProtocolHandler$2;
+CLio/netty/handler/codec/http/websocketx/WebSocketProtocolHandler$3;
+CharGenUDPClient.java
+CloseWebSocketFrame.java
+ContinuationWebSocketFrame.java
+CoreWebSocket
+CoreWebSocket.java
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$1;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$2;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$3;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$4;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$5;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker00;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker07;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker08;
+DLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker13;
+DLio/netty/handler/codec/http/websocketx/WebSocketHandshakeException;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker$1;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker$2;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker00;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker08;
+DLio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker13;
+DWebSocket version 07 client handshake key: {}, expected response: {}
+DWebSocket version 08 client handshake key: {}, expected response: {}
+DWebSocket version 13 client handshake key: {}, expected response: {}
+DaytimeUDPClient.java
+DiscardUDPClient.java
+Discarding Zero Byte UDP Packet
+EchoUDPClient.java
+FLio/netty/handler/codec/http/websocketx/WebSocket08FrameDecoder$State;
+FLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$5$1;
+FLio/netty/handler/codec/http/websocketx/WebSocketClientHandshaker$5$2;
+FLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolConfig;
+FLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolConfig;
+FLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtension;
+GLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandler;
+GLio/netty/handler/codec/http/websocketx/WebSocketDecoderConfig$Builder;
+GLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler;
+G[Lio/netty/handler/codec/http/websocketx/WebSocket08FrameDecoder$State;
+HLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolConfig$1;
+HLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolConfig$1;
+HaWebSocket.java
+HaWebSocketClient
+Hlambda$startAuth$0$com-ultrabar-hub-integration-ha-websocket-HaWebSocket
+ILio/netty/handler/codec/http/websocketx/CorruptedWebSocketFrameException;
+ILio/netty/handler/codec/http/websocketx/WebSocketClientHandshakerFactory;
+ILio/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory;
+IS_SUPPORTING_UDP_SEGMENT
+JLio/netty/handler/codec/http/websocketx/WebSocketClientHandshakeException;
+JLio/netty/handler/codec/http/websocketx/WebSocketServerHandshakeException;
+JLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionData;
+JLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionUtil;
+Jlambda$scheduleHeartbeat$0$com-ultrabar-hub-common-websocket-CoreWebSocket
+KLcom/ultrabar/hub/common/websocket/CoreWebSocket$$ExternalSyntheticLambda0;
+KLcom/ultrabar/hub/common/websocket/CoreWebSocket$$ExternalSyntheticLambda1;
+LLio/netty/handler/codec/http/websocketx/extensions/WebSocketClientExtension;
+LLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilter;
+LLio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtension;
+Lio/netty/handler/codec/http/websocketx/extensions/compression/DeflateFrameClientExtensionHandshaker$DeflateFrameClientExtension;
+Lio/netty/handler/codec/http/websocketx/extensions/compression/DeflateFrameServerExtensionHandshaker$DeflateFrameServerExtension;
+Lio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateClientExtensionHandshaker$PermessageDeflateExtension;
+Lio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateServerExtensionHandshaker$PermessageDeflateExtension;
+Lokhttp3/WebSocket$Factory;
+Lokhttp3/WebSocket;
+Lokhttp3/WebSocketListener;
+MLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionDecoder;
+MLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionEncoder;
+N(ZLokio/BufferedSource;Lokhttp3/internal/ws/WebSocketReader$FrameCallback;ZZ)V
+NLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolConfig$Builder;
+NLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolConfig$Builder;
+NLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilter$1;
+NLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilter$2;
+NLio/netty/handler/codec/http/websocketx/extensions/compression/DeflateDecoder;
+NLio/netty/handler/codec/http/websocketx/extensions/compression/DeflateEncoder;
+NTPUDPClient.java
+O$SwitchMap$io$netty$handler$codec$http$websocketx$WebSocket08FrameDecoder$State
+PLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandshakeHandler;
+PLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandshakeHandler;
+PingWebSocketFrame.java
+PongWebSocketFrame.java
+QLcom/ultrabar/hub/integration/ha/websocket/HaWebSocket$$ExternalSyntheticLambda0;
+QLcom/ultrabar/hub/integration/ha/websocket/HaWebSocket$$ExternalSyntheticLambda1;
+RLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandshakeHandler$1;
+RLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandshakeHandler$2;
+RLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandshakeHandler$3;
+RLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandshakeHandler$1;
+RLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandshakeHandler$2;
+RLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandshakeHandler$3;
+RealWebSocket.kt
+SEC_WEBSOCKET_ACCEPT
+SEC_WEBSOCKET_EXTENSIONS
+SEC_WEBSOCKET_KEY
+SEC_WEBSOCKET_KEY1
+SEC_WEBSOCKET_KEY2
+SEC_WEBSOCKET_LOCATION
+SEC_WEBSOCKET_ORIGIN
+SEC_WEBSOCKET_PROTOCOL
+SEC_WEBSOCKET_VERSION
+SLio/netty/handler/codec/http/websocketx/extensions/WebSocketClientExtensionHandler;
+SLio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandler;
+Sec-WebSocket-Accept
+Sec-WebSocket-Extensions
+Sec-WebSocket-Key
+Sec-WebSocket-Key1
+Sec-WebSocket-Key2
+Sec-WebSocket-Location
+Sec-WebSocket-Origin
+Sec-WebSocket-Protocol
+Sec-WebSocket-Version
+TLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilterProvider;
+TLokhttp3/internal/ws/RealWebSocket$initReaderAndWriter$lambda$3$$inlined$schedule$1;
+TPAF_UDP4_BYTE
+TPAF_UDP6_BYTE
+TextWebSocketFrame.java
+TimeUDPClient.java
+U(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)Lokhttp3/internal/ws/WebSocketExtensions;
+UDPPacket.java
+UDP_ASSOCIATE
+UDP_HEADER_SIZE
+ULio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandler$1;
+ULio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandler$2;
+ULokhttp3/internal/ws/RealWebSocket$writeOneFrame$lambda$8$$inlined$execute$default$1;
+Unexpected exception: UDP [{}]
+VLio/netty/handler/codec/http/websocketx/extensions/WebSocketClientExtensionHandshaker;
+VLio/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilterProvider$1;
+VLio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandshaker;
+VLio/netty/handler/codec/http/websocketx/extensions/compression/PerFrameDeflateDecoder;
+VLio/netty/handler/codec/http/websocketx/extensions/compression/PerFrameDeflateEncoder;
+WEBSOCKET
+WEBSOCKET_07_ACCEPT_GUID
+WEBSOCKET_08_ACCEPT_GUID
+WEBSOCKET_13_ACCEPT_GUID
+WEBSOCKET_LOCATION
+WEBSOCKET_ORIGIN
+WEBSOCKET_PROTOCOL
+W[Lio/netty/handler/codec/http/websocketx/extensions/WebSocketClientExtensionHandshaker;
+W[Lio/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandshaker;
+WebSocket
+WebSocket Protocol Handshake
+WebSocket-Location
+WebSocket-Origin
+WebSocket-Protocol
+WebSocket.kt
+WebSocket00FrameDecoder.java
+WebSocket00FrameEncoder.java
+WebSocket07FrameDecoder.java
+WebSocket07FrameEncoder.java
+WebSocket08FrameDecoder.java
+WebSocket08FrameEncoder.java
+WebSocket13FrameDecoder.java
+WebSocket13FrameEncoder.java
+WebSocketChunkedInput.java
+WebSocketClientExtension.java
+WebSocketClientHandshaker.java
+WebSocketCloseStatus.java
+WebSocketDecoderConfig.java
+WebSocketExtension.java
+WebSocketExtensionData.java
+WebSocketExtensionDecoder.java
+WebSocketExtensionEncoder.java
+WebSocketExtensionFilter.java
+WebSocketExtensionUtil.java
+WebSocketExtensions.kt
+WebSocketFrame.java
+WebSocketFrameAggregator.java
+WebSocketFrameDecoder.java
+WebSocketFrameEncoder.java
+WebSocketListener.kt
+WebSocketProtocol.kt
+WebSocketProtocolHandler.java
+WebSocketReader.kt
+WebSocketScheme.java
+WebSocketServerExtension.java
+WebSocketServerHandshaker.java
+WebSocketUtil.java
+WebSocketVersion.java
+WebSocketWriter.kt
+XLio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateDecoder;
+XLio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateEncoder;
+YLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler$HandshakeComplete;
+Y{} RECEIVED: UDP truncated packet received, consider adjusting maxPayloadSize for the {}.
+aLio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandler$ClientHandshakeStateEvent;
+aLio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler$ServerHandshakeStateEvent;
+aLio/netty/handler/codec/http/websocketx/extensions/compression/WebSocketClientCompressionHandler;
+aLio/netty/handler/codec/http/websocketx/extensions/compression/WebSocketServerCompressionHandler;
+b[Lio/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandler$ClientHandshakeStateEvent;
+b[Lio/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler$ServerHandshakeStateEvent;
+completeUDPWrite
+eLio/netty/handler/codec/http/websocketx/extensions/compression/DeflateFrameClientExtensionHandshaker;
+eLio/netty/handler/codec/http/websocketx/extensions/compression/DeflateFrameServerExtensionHandshaker;
+failWebSocket
+forWebSocket
+getForWebSocket
+getWebSocketContentLength
+getWebSocketLocation
+handleUDP
+isSupportingUdpSegment
+isUdpGro
+isWebSocketPath
+isWebsocketUpgrade
+jLio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateClientExtensionHandshaker;
+jLio/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateServerExtensionHandshaker;
+minWebSocketMessageToCompress
+newWebSocket
+newWebSocketEncoder
+newWebSocketStreams
+newWebSocketStreams$okhttp
+newWebsocketDecoder
+okhttp3/internal/ws/RealWebSocket
+okhttp3/internal/ws/WebSocketProtocol
+okhttp3/internal/ws/WebSocketReader
+okhttp3/internal/ws/WebSocketWriter
+sec-websocket-accept
+sec-websocket-extensions
+sec-websocket-key
+sec-websocket-key1
+sec-websocket-key2
+sec-websocket-location
+sec-websocket-origin
+sec-websocket-protocol
+sec-websocket-version
+setUdpGro
+toCharArrayForSpringWebSocket
+webSocket
+webSocketURL
+webSocketUpgradeFailed
+webSocketUri
+websocket
+websocket-location
+websocket-origin
+websocket-protocol
+websocketHostValue
+websocketOriginValue
+websocketPath
+writeUDPv4
+writeUDPv6
+{} RECEIVED: UDP [{}: {}], {}

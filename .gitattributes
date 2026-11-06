@@ -1,0 +1,3 @@
+# Preserve original research output and extracted vendor configuration.
+docs/research/evidence/** -whitespace
+vendor/sanytron/plugin-packs/*.config.json -whitespace

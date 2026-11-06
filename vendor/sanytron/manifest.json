@@ -1,0 +1,37 @@
+{
+  "capturedOn": "2026-11-05",
+  "files": [
+    {
+      "path": "v1.0.1.0/UltraWorkSpace-V1.0.1.0-Windows.zip",
+      "bytes": 16462053,
+      "sha256": "e2e36f727733daf3de5e93d100c440cc1e994109750fe7937d2be9fd8636bedb",
+      "source": "https://github.com/Qinkunex/UltraWorkspace/releases/tag/v1.0.1.0"
+    },
+    {
+      "path": "v1.0.1.0/bridge.1.0.4.4.apk",
+      "bytes": 22006908,
+      "sha256": "a6394bcad5938275fdcaf0774f68f87ee83c6a19ee831e704321f784704a77f2",
+      "source": "https://github.com/Qinkunex/UltraWorkspace/releases/tag/v1.0.1.0"
+    },
+    {
+      "path": "v1.0.1.0/LineOS.V1.0.9.9.apk",
+      "bytes": 72371659,
+      "sha256": "3cc2325501b66fe6a7d653de23a1424dda3e6a5e91c005e3bea6a1d49c8c5f2e",
+      "source": "https://github.com/Qinkunex/UltraWorkspace/releases/tag/v1.0.1.0"
+    },
+    {
+      "path": "plugin-packs/zoom-v1.0.0.zip",
+      "bytes": 99112,
+      "sha256": "a45d7a5afdcd02b20f03b3e91513bdb32f4623289676eaeac0a2806031f5b858",
+      "source": "UltraWorkSpace Cloud Plugin store; pack extracted from local project file_store",
+      "name": "ZOOM Hotkey Plugin"
+    },
+    {
+      "path": "plugin-packs/obs-v1.0.0.zip",
+      "bytes": 20256,
+      "sha256": "b2db2a4501e6f69ab5da564012705e26bae9fbb6368754cb12d3c6af17534472",
+      "source": "UltraWorkSpace Cloud Plugin store; pack extracted from local project file_store",
+      "name": "OBS Hotkey Plugin"
+    }
+  ]
+}

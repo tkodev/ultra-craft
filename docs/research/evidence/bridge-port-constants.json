@@ -1,0 +1,12 @@
+{
+  "tool": "ordinary Python DEX encoded_array parser; not REA Evidence",
+  "apkSha256": "a6394bcad5938275fdcaf0774f68f87ee83c6a19ee831e704321f784704a77f2",
+  "constants": [
+    {
+      "member": "TCP_COMMUNICATION_PORT",
+      "value": 7431,
+      "dex": "classes.dex",
+      "offset": "0x7f2a7e"
+    }
+  ]
+}

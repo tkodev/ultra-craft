@@ -1,0 +1,31 @@
+{
+  "source": "vendor/sanytron/v1.0.1.0/LineOS.V1.0.9.9.apk",
+  "sourceSha256": "3cc2325501b66fe6a7d653de23a1424dda3e6a5e91c005e3bea6a1d49c8c5f2e",
+  "method": "Ordinary direct JADX output using DumpSelected.java, not REA Evidence",
+  "files": [
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/adapter/holder/sense/SenseCubeHolder.java",
+      "sha256": "5253737f431d12f49ea6d583a5bd0188f860b3c96b4040456622cea2861f89cc"
+    },
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/adapter/holder/sense/SenseCubeAudioHolder.java",
+      "sha256": "cad171967b5d7e657a3d3f2c723f4e33576f44bbd992d41ba5ea888bf40343fe"
+    },
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/adapter/holder/computer/CpuHolder.java",
+      "sha256": "92d6a22b663666c9d0ca3370b26e0541eb2f7e59b618c544e478555a49f9d917"
+    },
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/communication/message/profile/convert/impl/SenseCubeParamConverter.java",
+      "sha256": "46276512b8a2b2d9f4ee5d0ee1779fc97fa808104db43e6614bd9378ded7b306"
+    },
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/communication/message/profile/convert/WidgetCoverRegistry.java",
+      "sha256": "d26c6046fe2c45644c3b3166985222938ab87f9ba3efaa6822ac9165affff62b"
+    },
+    {
+      "classFile": "decompiled/com/ultrabar/launch/common/manager/PluginServerManager.java",
+      "sha256": "cff0ba4019827ebd4b5165998f00c2d4de17d936a743bdc2d599bbdbd9dfb4f2"
+    }
+  ]
+}

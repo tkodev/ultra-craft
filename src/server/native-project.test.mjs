@@ -1,0 +1,72 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { DatabaseSync } from 'node:sqlite';
+import { mkdtemp, rm, readFile, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { createNativeProject } from './native-project.mjs';
+
+test('native project editing preserves the original, unknown configuration and module bindings; exports omit host tokens', async t => {
+  const directory = await mkdtemp(join(tmpdir(),'ultra-native-')); t.after(()=>rm(directory,{recursive:true,force:true}));
+  const source=join(directory,'source.umpf'), working=join(directory,'working.umpf');
+  const db=new DatabaseSync(source);
+  db.exec('CREATE TABLE json_store(id INTEGER PRIMARY KEY,type TEXT,k1 TEXT,"columns" TEXT,data TEXT,sort_id INTEGER,updated_at INTEGER DEFAULT 0)');
+  db.exec("CREATE TRIGGER trg_json_store_updated AFTER UPDATE ON json_store FOR EACH ROW WHEN NEW.updated_at = OLD.updated_at BEGIN UPDATE json_store SET updated_at = strftime('%s','now') WHERE id = OLD.id; END");
+  const put=db.prepare('INSERT INTO json_store(id,type,k1,\"columns\",data,sort_id) VALUES (?,?,?,?,?,?)');
+  put.run(1,'profile',null,JSON.stringify({name:'Original',preferred:true,unknown:'preserve'}),'{}',0);
+  put.run(2,'host',null,JSON.stringify({token:'fixture-secret',ip:'192.0.2.1'}),'{}',0);
+  put.run(3,'profileCbWidget','1',JSON.stringify({name:'Clock',widgetType:'basic'}),JSON.stringify({deploymentData:{type:'TIME',param:{style:2}}}),0);
+  put.run(4,'module',null,'{}',JSON.stringify({profiles:{profile_1:{custom:'unchanged'}}}),0);db.close();
+  const original=await readFile(source);
+  const project=createNativeProject(source,working);
+  const summary=await project.summary();assert.equal(summary.profiles[0].widgets[0].nativeType,'TIME');
+  assert.ok(!JSON.stringify(summary).includes('fixture-secret'));
+  await project.rename(1,'Edited');assert.equal((await project.summary()).profiles[0].name,'Edited');
+  assert.deepEqual(await readFile(source),original);
+  const exported=await project.export();assert.ok(!exported.includes(Buffer.from('fixture-secret')));
+  const exportPath=join(directory,'export.umpf');await writeFile(exportPath,exported);
+  const check=new DatabaseSync(exportPath,{readOnly:true});
+  const attributes=JSON.parse(check.prepare('SELECT "columns" FROM json_store WHERE id=1').get().columns);
+  assert.equal(attributes.name,'Edited');assert.equal(attributes.unknown,'preserve');
+  const module=JSON.parse(check.prepare('SELECT data FROM json_store WHERE id=4').get().data);
+  assert.equal(module.profiles.profile_1.custom,'unchanged');check.close();
+});
+
+test('native reorder cannot drop widgets or cross profile boundaries and label edits preserve parameters', async t => {
+  const directory=await mkdtemp(join(tmpdir(),'ultra-order-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+  const source=join(directory,'source.umpf'),working=join(directory,'working.umpf');
+  const db=new DatabaseSync(source);db.exec('CREATE TABLE json_store(id INTEGER PRIMARY KEY,type TEXT,k1 TEXT,"columns" TEXT,data TEXT,sort_id INTEGER)');
+  const put=db.prepare('INSERT INTO json_store VALUES(?,?,?,?,?,?)');
+  put.run(1,'profile',null,'{"name":"One"}','{}',0);put.run(2,'profile',null,'{"name":"Two"}','{}',1);
+  for(const [id,parent] of [[3,'1'],[4,'1'],[5,'2']])put.run(id,'profileCbWidget',parent,'{"name":"Clock","widgetType":"basic"}','{"deploymentData":{"type":"TIME","param":{"style":2}},"unknown":"keep"}',id);
+  db.close();
+  const project=createNativeProject(source,working);
+  await assert.rejects(project.reorder(1,[3]),/preserve/);
+  await assert.rejects(project.reorder(1,[3,5]),/preserve/);
+  await assert.rejects(project.reorder(1,[3,3]),/Invalid/);
+  const reordered=await project.reorder(1,[4,3]);assert.deepEqual(reordered.profiles[0].widgets.map(w=>w.id),[4,3]);
+  await project.renameWidget(4,'My clock');
+  const check=new DatabaseSync(working,{readOnly:true});const row=check.prepare('SELECT data FROM json_store WHERE id=4').get();const data=JSON.parse(row.data);
+  assert.equal(data.unknown,'keep');assert.equal(data.deploymentData.param.style,2);assert.equal(data.deploymentData.name,'My clock');check.close();
+});
+
+test('native profile creation and default changes preserve existing widget rows and unknown profile fields', async t => {
+  const directory=await mkdtemp(join(tmpdir(),'ultra-default-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+  const source=join(directory,'source.umpf'),working=join(directory,'working.umpf');
+  const db=new DatabaseSync(source);db.exec('CREATE TABLE json_store(id INTEGER PRIMARY KEY AUTOINCREMENT,type TEXT,k1 TEXT,"columns" TEXT,data TEXT,sort_id INTEGER)');
+  const put=db.prepare('INSERT INTO json_store VALUES(?,?,?,?,?,?)');
+  put.run(1,'profile','true','{"name":"First","preferred":true,"unknown":"keep"}','{}',0);
+  put.run(2,'profileCbWidget','1','{"name":"Clock"}','{"deploymentData":{"type":"TIME"}}',0);db.close();
+  const original=await readFile(source);
+  const project=createNativeProject(source,working);
+  const created=await project.create('Second');assert.equal(created.profiles.length,2);
+  assert.equal(created.profiles[0].widgets.length,1);
+  const second=created.profiles.find(profile=>profile.name==='Second');assert.equal(second.preferred,false);
+  const changed=await project.setDefault(second.id);assert.equal(changed.profiles.filter(profile=>profile.preferred).length,1);
+  assert.equal(changed.profiles.find(profile=>profile.preferred).id,second.id);
+  await assert.rejects(project.setDefault(999),/Unknown/);
+  const check=new DatabaseSync(working,{readOnly:true});
+  const first=check.prepare('SELECT k1,"columns" FROM json_store WHERE id=1').get();
+  assert.equal(first.k1,'false');assert.equal(JSON.parse(first.columns).unknown,'keep');check.close();
+  assert.deepEqual(await readFile(source),original);
+});
